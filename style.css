@@ -14,9 +14,11 @@ body{
   
 }
 
+
+
 body::after{
   --filterColor: linear-gradient(-45deg, blue, orange );
-  --filterOpacity: 0.5;
+  --filterOpacity: 0.2;
 
   content: '';
   display: block;
@@ -32,7 +34,7 @@ body::after{
   position: absolute;
   top: 0;
   left: 0;
-  z-index: -1;
+  z-index: 0;
 }
 
 @keyframes filter{
@@ -108,7 +110,7 @@ animation: fadein 1.5s ease-in-out;
 /* DAILY THOUGHTS SECTION */
 
 
-.DailyThoughts h1{
+.stories h1{
 margin: 0;
 margin-bottom: 10px;
 text-transform: uppercase;
@@ -190,7 +192,7 @@ section{
 
 
 
-#DailyThoughts{
+#stories{
   background: url('https://images.pexels.com/photos/994605/pexels-photo-994605.jpeg') no-repeat center center;
   background-size: cover;
   position: relative;
@@ -198,7 +200,7 @@ section{
 
 
 
-#DailyThoughts::before{
+#stories::before{
   display: block;
   content: '';
 
@@ -222,7 +224,7 @@ section{
 
   animation: filter normal 5s infinite ease-in-out;
 
-  z-index: 2;
+  z-index: 0;
 }
 
 @keyframes filter{
@@ -231,7 +233,9 @@ section{
   100% {background-position: 0% 50%;}
 }
 
-
+#storiesh1{
+  z-index: 210;
+}
 
 
 
@@ -458,7 +462,6 @@ ul.list li p:nth-child(2) {
   top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
-
 }
 
 
@@ -477,3 +480,7 @@ ul.list li p:nth-child(2) {
     height: 100vh;
 
   } */
+
+
+  /* COlor first background
+  Problem reload and it starts at the stories */
