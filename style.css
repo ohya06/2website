@@ -1,0 +1,479 @@
+body{
+  padding: 0;
+  margin: 0;
+  border: none;
+  height: 100vh;
+ 
+  background: 
+  url('https://images.pexels.com/photos/994605/pexels-photo-994605.jpeg')
+  no-repeat center center fixed;
+
+  background-size: cover;
+
+  position: relative;
+  
+}
+
+body::after{
+  --filterColor: linear-gradient(-45deg, blue, orange );
+  --filterOpacity: 0.5;
+
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  opacity: var(--filterOpacity);
+
+  background-size: 200% 200%;
+  background-image: var(--filterColor);
+
+  animation: filter normal 5s infinite ease-in-out;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+@keyframes filter{
+  0% {background-position: 0% 50%;}
+  50% {background-position: 100% 50%}
+  100% {background-position: 0% 50%;}
+}
+
+
+/* --------------------------------------------------------- */
+/* Text  */
+/* HOMEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE*/
+
+
+.home{
+  font-family: 'Rubik',sans-serif;
+  color: #ffffff;
+  text-align: center;
+  display: flex;
+  height: 100%;
+  flex-grow: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.home h1{
+margin: 0;
+margin-bottom: 10px;
+text-transform: uppercase;
+font-size: 100px;
+color: rgba(0, 0, 0, .2);
+z-index: 1;
+background: center / cover url('./image/Cosmos.jpg') no-repeat;
+background-clip: text;
+-webkit-background-clip: text;
+
+width: 65%;
+user-select: none;
+
+animation: fadein 1.5s ease-in-out;
+}
+
+
+
+
+.home h3{
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 20px;
+  
+  width: 65%;
+  user-select: none;
+  z-index: 1;
+  animation: fadein 1.5s ease-in-out;
+  }
+
+
+@keyframes fadein{
+  from {
+    transform:translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+
+/* ------------------------------------------------------- */
+/* DAILY THOUGHTS SECTION */
+
+
+.DailyThoughts h1{
+margin: 0;
+margin-bottom: 10px;
+text-transform: uppercase;
+font-size: 100px;
+color: rgba(0, 0, 0, .2);
+
+background: center / cover url('./image/Cosmos.jpg') no-repeat;
+background-clip: text;
+-webkit-background-clip: text;
+
+width: 55%;
+user-select: none;
+
+animation: fadein 1.5s ease-in-out;
+
+
+
+text-align: center;
+display: flex;
+height: 100%;
+width: 100%;
+flex-grow: 1;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+  
+}
+
+
+
+
+/* --------------------------------------------------------- */
+/* Navigation bar */
+
+
+
+
+
+html{
+  scroll-behavior: smooth;
+}
+
+
+a{
+  text-decoration: none;
+  color: #ffffff;
+  transition: opacity .2s;
+}
+
+a:hover{
+  opacity:.6;
+}
+
+section{
+  height: 100vh;
+}
+
+#home{
+  background: url('https://images.pexels.com/photos/994605/pexels-photo-994605.jpeg') no-repeat center center;
+  background-size: cover;
+  position: relative;
+}
+
+#home::before{
+  display: block;
+  content: '';
+
+  width: 100%;
+  height: 100%;
+
+  position: absolute;
+  left: 0;
+  top: 0;
+
+  background: #b96a70;
+  opacity: .2;
+}
+
+
+
+
+#DailyThoughts{
+  background: url('https://images.pexels.com/photos/994605/pexels-photo-994605.jpeg') no-repeat center center;
+  background-size: cover;
+  position: relative;
+}
+
+
+
+#DailyThoughts::before{
+  display: block;
+  content: '';
+
+  width: 100%;
+  height: 100%;
+
+  position: absolute;
+  left: 0;
+  top: 0;
+
+  opacity: .2;
+
+  --filterColor: linear-gradient(-45deg, blue, orange );
+  --filterOpacity: 0.35;
+
+ 
+  opacity: var(--filterOpacity);
+
+  background-size: 200% 200%;
+  background-image: var(--filterColor);
+
+  animation: filter normal 5s infinite ease-in-out;
+
+  z-index: 2;
+}
+
+@keyframes filter{
+  0% {background-position: 0% 50%;}
+  50% {background-position: 100% 50%}
+  100% {background-position: 0% 50%;}
+}
+
+
+
+
+
+
+
+
+nav{
+  display: flex;
+  padding: 40px 56px;
+  background: transparent;
+  user-select: none;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  margin: 0;
+  padding: 0;
+  border: none;
+  box-sizing: border-box;
+  justify-content: center;
+  font-family: 'Open Sans', sans-serif;
+  transition: background .4s, padding .4s;
+}
+
+nav span{
+  color: #07dffc;
+  font-weight: 700;
+  width: 30%;
+  padding: 16px;
+}
+
+nav ul{
+  list-style-type: none;
+  margin-left: auto;
+  display: flex;
+  justify-content: flex-end;
+  padding: 16px
+}
+
+nav ul li:not(:first-child){
+  margin-left: 32px;
+}
+
+nav._fixed{
+  background: #121212;
+  padding: 24px 40px;
+}
+
+/* --------------------------------------------------------- */
+/* Clock */
+
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat',sans-serif;
+
+}
+
+#clock p{
+  width: 210px;
+  line-height: 30px;
+  text-align: center;
+  border-radius: 50px;
+  color: lightskyblue;
+  font-size: 28px;
+  box-shadow: inset 2px 3px 4px rgba(255, 255, 255, .1), 2px 3px 4px rgba(0, 0, 0, .4);
+
+}
+
+.clock2{
+  text-align: center;
+  width: 40%;
+  justify-content: center;
+  display: flex;
+}
+
+
+
+
+
+
+/* --------------------------------------------------------- */
+/* COMMENET SECTION */
+
+*.commentlist{
+  list-style-type: none;
+  user-select: none;
+}
+
+
+.commentlist{
+  margin-top: 50px;
+  background: #e49595;
+  width: 450px;
+  height: min-content;
+  padding: 20px 0;
+  text-align: center;
+  border-radius: 20px;
+  overflow: hidden;
+  z-index: 2;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.commentlist input,
+.commentlist button {
+  height: 40px;
+  width: 90%;
+  border-radius: 50px;
+  font-size: 18px;
+}
+
+.commentlist input{
+  border: 2px solid #e49595;
+  padding-left: 12px;
+  padding-bottom: 12px;
+  transition: .4s;
+}
+
+.commentlist input:focus {border: 2px solid #e49595; }
+
+.commentlist button{
+  cursor: pointer;
+  color: #fffefe;
+  background: #f08e0f48;
+  letter-spacing: 1px;
+  transition: .4s;
+}
+
+.commentlist button:hover {background: #4d8ea1; }
+
+ul.list {
+position: absolute;
+width: 450px;
+height: fit-content;
+background: #282b3f;
+margin-top: 140px;
+padding-top: 90px;
+border-radius: 20px;
+transition: .4s;
+top: 35%;
+left: 50%;
+transform: translate(-50%, 0);
+z-index: 1;
+max-height: 400px;
+overflow: scroll;
+overflow-x: hidden;
+
+}
+
+
+ul.list li {padding: 15px; }
+
+ul.list li span { display: flex;}
+
+/* NAME */
+ul.list li span p:nth-child(1){
+  text-transform: uppercase;
+  font-size: 22px;
+  font-weight: 550;
+  color: #ffffff;
+  margin-right: 10px;
+}
+/* TIME */
+ul.list li span p:nth-child(2) {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 200;
+    margin-top: -3px;
+}
+/* MESSAGE */
+ul.list li p:nth-child(2) {
+    color: #fcfcfc;
+    font-size: 18px;
+    font-weight: 400;
+    padding-top: 5px;
+} 
+
+
+
+/* _------------------------------------------------- */
+/* BackgroundVideo */
+
+/* *{
+  margin: 0;
+  padding-top: 0;
+  box-sizing: border-box;
+} */
+
+.Particles{
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.Particles video{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.ParticleContent{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .6);
+}
+
+.ParticleContent h1{
+  text-transform: uppercase;
+  font-size: 30px;
+  font-family: 'Arial Black';
+  white-space: nowrap;
+  color: #eee;
+  text-shadow: 0 0 2px #111;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+
+
+/* ---------------------------------------------------- */
+  img {
+    height: 100px;
+    border-radius: 50%;
+    border-color: lightcoral;
+  }
+
+  
+/*   body{
+    padding: 0;
+    margin: 0;
+    border: none;
+    height: 100vh;
+
+  } */
