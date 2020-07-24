@@ -11,7 +11,6 @@ body{
   background-size: cover;
 
   position: relative;
-  
 }
 
 
@@ -62,6 +61,13 @@ body::after{
   
 }
 
+/* @media screen and (max-width: 599px){
+  .home h1{
+    font-size: 40px !important;
+  }
+} */
+
+
 .home h1{
 margin: 0;
 margin-bottom: 10px;
@@ -91,7 +97,19 @@ animation: fadein 1.5s ease-in-out;
   user-select: none;
   z-index: 1;
   animation: fadein 1.5s ease-in-out;
+
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;  
   }
+
+
+  .typed-cursor {
+    display: none;
+  }
+
 
 
 @keyframes fadein{
@@ -105,6 +123,36 @@ animation: fadein 1.5s ease-in-out;
   }
 }
 
+
+
+/* THIS IS JUST MANUAL h3 IF ITS IN IT */
+/* 
+.home h3{
+  overflow: hidden;
+  border-right: 2px solid;
+  white-space: nowrap;
+  margin: 0 auto;
+  user-select: none;
+  z-index: 1;
+  
+  animation: typing 5s steps(30, end),
+  blink-caret 1s step-end infinite;
+  }
+  
+  @keyframes typing {
+    from{
+      width:0;
+        }
+      to{
+        width: 40%;
+      }
+  }
+  
+  @keyframes blink-caret {
+    50% {
+      border-color: transparent;
+    }
+  } */
 
 /* ------------------------------------------------------- */
 /* DAILY THOUGHTS SECTION */
@@ -126,7 +174,7 @@ user-select: none;
 
 animation: fadein 1.5s ease-in-out;
 
-
+position: absolute;
 
 text-align: center;
 display: flex;
@@ -233,9 +281,6 @@ section{
   100% {background-position: 0% 50%;}
 }
 
-#storiesh1{
-  z-index: 210;
-}
 
 
 
@@ -265,6 +310,7 @@ nav span{
   font-weight: 700;
   width: 30%;
   padding: 16px;
+  font-size: 14px;
 }
 
 nav ul{
@@ -272,7 +318,8 @@ nav ul{
   margin-left: auto;
   display: flex;
   justify-content: flex-end;
-  padding: 16px
+  padding: 16px;
+  font-size: 14px;
 }
 
 nav ul li:not(:first-child){
@@ -281,7 +328,7 @@ nav ul li:not(:first-child){
 
 nav._fixed{
   background: #121212;
-  padding: 24px 40px;
+  padding: 10px 10  px;
 }
 
 /* --------------------------------------------------------- */
@@ -482,5 +529,23 @@ ul.list li p:nth-child(2) {
   } */
 
 
-  /* COlor first background
-  Problem reload and it starts at the stories */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

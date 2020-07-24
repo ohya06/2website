@@ -18,7 +18,7 @@
 <!-- NAVIGATION PAGE -->
 
 <nav>
-    <span>WELCOME USERS</span>
+    <span>LiftUpShare</span>
     
     <div id="clock" class="clock2">
     <p></p>
@@ -36,6 +36,10 @@
         <li>
             <a href="#Review"> Review </a> 
         </li>
+
+        <li>
+            <a href = "About.html"> About </a>
+        </li>
     </ul>
 </nav>
 
@@ -47,13 +51,25 @@
 
 
    <div class="home" id="home">
-       <h1>Yaechan Oh </h1>
+       <h1>LiftUpShare </h1>
       
-       <h3>Student &nbsp;&bull;&nbsp; Athlete &nbsp;&bull;&nbsp; Musician</h3>
-    
-       <br>
- 
+       <h3><span class="animatetext"></span></h3>
+
     </div>
+
+    <script src="typed.js"></script>
+    <script>
+        var typed = new Typed(".animatetext", {
+            strings: [
+                "Welcome To LiftUpShare!",
+                "Stories From All Over The World!",
+                "Share Your Stories!"
+            ],
+            typeSpeed: 70,
+            backSpeed: 50,
+            loop: true
+        });
+    </script>
 
 
 
@@ -101,7 +117,14 @@
    
     <!--<img src="image/aoh4z6fwold21.png">-->
     
+
     <script src="script.js"></script>
+    <script src="typed.js"></script>
+
+
+
+
+
   </body>
 </html>
 

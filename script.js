@@ -42,6 +42,23 @@ if(h < 12)
 
 
 /* --------------------------------------------------------- */
+
+
+/* var typed = new typed('.text', {
+    strings: ['Welcome! ', 'Story Tellers of all over the world! '],
+    typeSpeed: 50,
+    backSpeed: 50,
+    loop: true
+});
+ */
+
+
+
+
+
+
+
+/* --------------------------------------------------------- */
 /* Comment section */
 
 let add = () => {
