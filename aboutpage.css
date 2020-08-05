@@ -66,7 +66,7 @@
 
 
   #About1Page{
-    background: url('https://images.pexels.com/photos/994605/pexels-photo-994605.jpeg') no-repeat center center;
+    background: url(./image/Cosmos.jpg) no-repeat center center;
     background-size: cover;
     position: relative;
   }
@@ -97,23 +97,46 @@
   
   
   .About1Page h1{
-  margin: 0;
-  margin-bottom: 10px;
-  text-transform: uppercase;
-  font-size: 100px;
-  color: rgba(0, 0, 0, .2);
-  z-index: 1;
-  background: center / cover url('./image/Cosmos.jpg') no-repeat;
-  background-clip: text;
-  -webkit-background-clip: text;
-  
-  width: 65%;
-  user-select: none;
-  
-  animation: fadein 1.5s ease-in-out;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
   }
   
-  
+  path{
+    stroke:#fff;
+    fill: #fff;
+    stroke-dasharray: 1400;
+    opacity: 10;
+    animation: animate 3s cubic-bezier(0,0.23,0,0.1);
+}
+
+@keyframes animate{
+    0% {
+        opacity: 0;
+        fill: none;
+        stroke-dashoffset: 1400;
+    }
+
+    30% {
+        opacity: 10;
+        fill: none;
+        stroke-dashoffset: 1400;
+    }
+
+    90% {
+        fill: rgba(255,255,255,0)
+    }
+
+    100% {
+        opacity: 10;
+        fill: rgba(255, 255, 255, 1);
+        stroke-dashoffset: 0;
+    }
+}
+
+
   
   
   .About1Page h3{
@@ -149,7 +172,7 @@
   /* bio */
   
   .Bio{
-    background: url('https://images.pexels.com/photos/994605/pexels-photo-994605.jpeg') no-repeat center center;
+    background: url(./image/BlueStars.jpg) no-repeat center center;
     background-size: cover;
     position: relative;
   }

@@ -1,0 +1,310 @@
+  
+  
+  html{
+    scroll-behavior: smooth;
+  }
+  
+  
+  a{
+    text-decoration: none;
+    color: #ffffff;
+    transition: opacity .2s;
+  }
+  
+  a:hover{
+    opacity:.6;
+  }
+  
+  section{
+    height: 100vh;
+  }
+  
+  
+  
+  nav{
+    display: flex;
+    padding: 40px 56px;
+    background: transparent;
+    user-select: none;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+    justify-content: center;
+    font-family: 'Open Sans', sans-serif;
+    transition: background .4s, padding .4s;
+  }
+  
+  nav span{
+    color: #07dffc;
+    font-weight: 700;
+    width: 30%;
+    padding: 16px;
+    font-size: 14px;
+  }
+  
+  nav ul{
+    list-style-type: none;
+    margin-left: auto;
+    display: flex;
+    justify-content: flex-end;
+    padding: 16px;
+    font-size: 14px;
+  }
+  
+  nav ul li:not(:first-child){
+    margin-left: 32px;
+  }
+  
+  nav._fixed{
+    background: #121212;
+    padding: 10px 10  px;
+  }
+  
+  /* --------------------------------------------------------- */
+  /* Clock */
+  
+  
+  
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat',sans-serif;
+  
+  }
+  
+  #clock p{
+    width: 210px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50px;
+    color: lightskyblue;
+    font-size: 28px;
+    box-shadow: inset 2px 3px 4px rgba(255, 255, 255, .1), 2px 3px 4px rgba(0, 0, 0, .4);
+  
+  }
+  
+  .clock2{
+    text-align: center;
+    width: 40%;
+    justify-content: center;
+    display: flex;
+  }
+
+
+
+
+
+
+/* ------------------------------------------------------------------------ */
+/* Gallery viewer */
+
+
+.ProjectTitle{
+    margin: 0;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-size: 20px;
+    color: rgb(206, 206, 206);
+    z-index: 1;
+    font-weight: bolder;
+    
+    width: 65%;
+    user-select: none;
+
+    padding-bottom: 100px;
+    
+    animation: fadein 1.5s ease-in-out;
+}
+
+.contentgallery{
+    padding-top: 130px;
+    background: url(./image/WhiteClouds.jpg);
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    
+
+}
+
+
+
+
+
+.galleryimage1 p{
+position: absolute;
+top: 0;
+left: 0;
+line-height: 250px;
+color: white;
+font-size: 2rem;
+font-weight: 700;
+margin-left: 50px;
+transform: translateX();
+transition: all 0.4s;
+transition-delay: 0.2s;
+}
+
+.galleryimage1:hover p{
+transform: translateX(0);
+}
+
+
+
+.galleryimage1::before{
+    content: "";
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 0 50% 50% 0;
+    transform: translateX(-100%);
+    background-color: rgba(84, 84, 84, 0.646);
+    transition: all 0.6s;
+}
+
+.galleryimage1:hover::before{
+    transform: translateX(0);
+    border-radius: 0;
+    opacity: 1;
+}
+
+
+
+
+
+.gallery{
+    height: 400px;
+    width: 750px;
+    text-align: center;
+    position: relative;
+    margin: 0px auto;
+    z-index: 2;
+    overflow: hidden;
+}
+
+.gallery .galleryimage{
+    height: 100%;
+    width: 100%;
+}
+
+.galleryimage img{
+    height: 100%;
+    width: 100%;
+}
+
+.btm-sliders{
+    display: flex;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.btm-sliders span{
+    height: 15px;
+    width: 50px;
+    margin: 0 3px;
+    cursor: pointer;
+    transition: all .4s;
+}
+
+.gallery .slide{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 45px;
+    border: 2px solid white;
+    background: rgba(255,255,255,0.1);
+    cursor: pointer;
+}
+
+.slide span{
+    font-size: 35px;
+    color: white;
+    line-height: 41px;
+}
+
+.gallery .right{
+    margin-right: 10px;
+    right: 0;
+    height: 40px;
+}
+
+.gallery .left{
+    margin-left: 10px;
+    left: 0;
+    height: 40px;
+}
+
+
+
+/* --------------------------------------------------------- */
+/* SECOND PAGE */
+
+
+.ProjectBio{
+    background: url('https://images.pexels.com/photos/994605/pexels-photo-994605.jpeg') no-repeat center center;
+    background-size: cover;
+
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+
+  }
+  
+  
+
+
+  
+  .ProjectBio::before{
+    display: block;
+    content: '';
+    
+
+
+    width: 100%;
+    height: 100%;
+  
+    position: absolute;
+    left: 0;
+    top: 0;
+  
+/*     opacity: .2;
+  
+    --filterColor: linear-gradient(-45deg, blue, orange );
+    --filterOpacity: 0.3;
+  
+   
+    opacity: var(--filterOpacity);
+  
+    background-size: 200% 200%;
+    background-image: var(--filterColor);
+   */
+    animation: filter normal 5s infinite ease-in-out;
+  
+    z-index: 0;
+  }
+/*   
+  @keyframes filter{
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%}
+    100% {background-position: 0% 50%;}
+  }
+ */
