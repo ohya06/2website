@@ -1,0 +1,196 @@
+ /* ------------------------------------------------------ */
+  /* Navigation bar */
+  
+  html{
+    scroll-behavior: smooth;
+  }
+  
+  
+  a{
+    text-decoration: none;
+    color: #ffffff;
+    transition: opacity .2s;
+  }
+  
+  a:hover{
+    opacity:.6;
+  }
+  
+  section{
+    height: 100vh;
+  }
+  
+  
+  
+  .navbar{
+    display: flex;
+    padding: 40px 56px;
+    background: transparent;
+    user-select: none;
+    position: fixed;
+    width: 100vw;
+    z-index: 100;
+    margin: 0;
+    padding: 0;
+    padding-right: 16px;
+    border: none;
+    box-sizing: border-box;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+    transition: background .4s, padding .4s;
+    
+  }
+  
+  .navbar .title{
+    color: #07dffc;
+    font-weight: 700;
+    width: 30%;
+    padding: 16px;
+    font-size: 1.2rem;
+    margin: .5rem;
+  }
+  
+  .navbar-links ul{
+    list-style-type: none;
+    margin-left: auto;
+    display: flex;
+    justify-content: flex-end;
+    padding: 16px;
+    font-size: 14px;
+    
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .navbar-links ul li{
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+  
+  .navbar._fixed{
+    background: #121212;
+    padding: 10px 10  px;
+  }
+
+  .navbar-links li{
+    list-style: none;
+
+  }
+
+  .navbar-links li a{
+    text-decoration: none;
+    padding: .1rem;
+    display: block;
+    
+  }
+  
+/*   .navbar-links li:hover{
+    background-color: red;
+  } */
+  
+  .toggle-button{
+    position: absolute;
+    top: 1.4rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+  }
+
+.toggle-button .bar{
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+}
+
+@media (max-width: 900px){
+  .toggle-button{
+    display: flex;
+  }
+
+  .navbar-links{
+    display: none;
+    width: 100%;
+  }
+
+  .navbar{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-links ul{
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .navbar-links li{
+    text-align: center;
+  }
+
+  .navbar-links li b {
+    padding: .5rem 1rem;
+  }
+
+  .navbar-links.active{
+    display: flex;
+    padding: 5px;
+  }
+
+  .navbar-links.active li{
+
+    padding: 5px;
+
+  }
+}
+
+
+/* --------------------------------------------------------- */
+  /* Clock */
+  
+  
+  
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat',sans-serif;
+  
+  }
+
+  #clock {
+    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 50%;
+  }
+  
+  #clock p{
+    width: 15vw;
+    line-height: 4vh;
+    text-align: center;
+    border-radius: 50px;
+    color: lightskyblue;
+    font-size: 2vw;
+    box-shadow: inset 2px 3px 4px rgba(255, 255, 255, .1), 2px 3px 4px rgba(0, 0, 0, .4);
+  
+  }
+  
+  .clock2{
+    text-align: center;
+    width: 40%;
+    justify-content: center;
+    display: flex;
+    position: relative;
+  }
+
+  .displaynone {
+    display: none;
+  }

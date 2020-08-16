@@ -4,7 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>Yaechan Oh</title>
-    <link href="aboutpage.css" rel="stylesheet" type="text/css" />
+    <link href="aboutpage.css" rel="stylesheet" type="text/css"/>
+    <link href="NavBar.css" rel="stylesheet" type="text/css"/>
     <link rel="icon" href="image/favicon.png" type="image/x-icon"/>
   </head>
   
@@ -24,33 +25,41 @@
 
 <!-- ------------------------------------------------------ -->
 <!-- Navigation Bar -->
-<nav>
-    <span>LiftUpShare</span>
+
+<nav class="navbar">
+    <span class="title">LiftUpShare</span>
     
     <div id="clock" class="clock2">
-    <p></p>
+        <p></p>
     </div>
     
-    <ul>
-        <li>
-            <a href="index.html"> Home </a>
-        </li>
+    <b href ="#" class="toggle-button">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </b>
 
-        <li>
-            <a href="stories.html"> Stories </a>
-        </li>
+    <div class="navbar-links">
+        <ul>
+            <li>
+                <a href="index.html"> Home </a>
+            </li>
 
-        <li>
-            <a href="projects.html"> Projects </a> 
-        </li>
+            <li>
+                <a href="stories.html"> Stories </a>
+            </li>
 
-        <li>
-            <a href = "About.html"> About </a>
+            <li>
+                <a href="projcts.html"> Projects </a> 
+            </li>
+
+            <li>
+                <a href = "About.html"> About </a>
         </li>
-    </ul>
+        </ul>
+    </div>
+    
 </nav>
-
-
 
 
 
@@ -178,15 +187,9 @@
 
 
 
-<!--   <div class="ProjectsPage">
-    <section id="ProjectsPage">
-    <img src="" alt="">
-    <h1 id="ProjectsPageh1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat odio, qui maxime veritatis animi quidem laboriosam voluptates reprehenderit molestiae libero at dignissimos quibusdam vero ad saepe aliquid possimus sapiente voluptatibus, blanditiis ullam perferendis velit quae quaerat. Ut saepe voluptatum molestiae, quaerat exercitationem doloremque, necessitatibus aspernatur error neque, excepturi corporis similique? </h1>
-    </section>
-  </div> -->
 
 
 
-<script src="script.js"></script>
+<script src="about.js"></script>
 </body>
 </html>

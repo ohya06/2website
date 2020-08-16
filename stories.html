@@ -6,6 +6,7 @@
     <title>Yaechan Oh</title>
     <link href="stories.css" rel="stylesheet" type="text/css" />
     <link rel="icon" href="image/favicon.png" type="image/x-icon"/>
+    <link href="NavBar.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
   </head>
   
@@ -18,30 +19,39 @@
 <!--------------------------------------------------------- -->
 <!-- NAVIGATION PAGE -->
 
-<nav>
-    <span>LiftUpShare</span>
+<nav class="navbar">
+    <span class="title">LiftUpShare</span>
     
     <div id="clock" class="clock2">
-    <p></p>
+        <p></p>
     </div>
     
-    <ul>
-        <li>
-            <a href="index.html"> Home </a>
-        </li>
+    <b href ="#" class="toggle-button">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </b>
 
-        <li>
-            <a href="stories.html"> Stories </a>
-        </li>
+    <div class="navbar-links">
+        <ul>
+            <li>
+                <a href="index.html"> Home </a>
+            </li>
 
-        <li>
-            <a href="#Review"> Contact </a> 
-        </li>
+            <li>
+                <a href="stories.html"> Stories </a>
+            </li>
 
-        <li>
-            <a href = "About.html"> About </a>
+            <li>
+                <a href="contact.html"> Contact </a> 
+            </li>
+
+            <li>
+                <a href = "About.html"> About </a>
         </li>
-    </ul>
+        </ul>
+    </div>
+    
 </nav>
 
 
@@ -84,7 +94,7 @@
    
     
 
-    <script src="script.js"></script>
+    <script src="stories.js"></script>
     <script src="typed.js"></script>
 
 

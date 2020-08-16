@@ -1,7 +1,4 @@
 
-  
-
-
   #storiesmainpageid{
     background: url(image/wavescanvas.jpg) no-repeat center center;
     background-size: cover;
@@ -19,13 +16,14 @@
     color: white;
     font-family: 'Rubik',sans-serif;
   
-  
+    font-size: 4vw;
     display: flex;
     height: 100vh;
-  
-
+    width: 100vw;
 }
   
+
+
 
 
 
@@ -36,111 +34,7 @@
   } */
   
   
-  
 
-
-  /* ------------------------------------------------------ */
-  /* Navigation bar */
-  
-  
-   
-  
-  html{
-    scroll-behavior: smooth;
-  }
-  
-  
-  a{
-    text-decoration: none;
-    color: #ffffff;
-    transition: opacity .2s;
-  }
-  
-  a:hover{
-    opacity:.6;
-  }
-  
-  section{
-    height: 100vh;
-  }
-  
-  
-  
-  nav{
-    display: flex;
-    padding: 40px 56px;
-    background: transparent;
-    user-select: none;
-    align-items: center;
-    position: fixed;
-    width: 100%;
-    z-index: 100;
-    margin: 0;
-    padding: 0;
-    border: none;
-    box-sizing: border-box;
-    justify-content: center;
-    font-family: 'Open Sans', sans-serif;
-    transition: background .4s, padding .4s;
-  }
-  
-  nav span{
-    color: #07dffc;
-    font-weight: 700;
-    width: 30%;
-    padding: 16px;
-    font-size: 14px;
-  }
-  
-  nav ul{
-    list-style-type: none;
-    margin-left: auto;
-    display: flex;
-    justify-content: flex-end;
-    padding: 16px;
-    font-size: 14px;
-  }
-  
-  nav ul li:not(:first-child){
-    margin-left: 32px;
-  }
-  
-  nav._fixed{
-    background: #121212;
-    padding: 10px 10  px;
-  }
-  
-  /* --------------------------------------------------------- */
-  /* Clock */
-  
-  
-  
-  *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Montserrat',sans-serif;
-  
-  }
-  
-  #clock p{
-    width: 210px;
-    line-height: 30px;
-    text-align: center;
-    border-radius: 50px;
-    color: lightskyblue;
-    font-size: 28px;
-    box-shadow: inset 2px 3px 4px rgba(255, 255, 255, .1), 2px 3px 4px rgba(0, 0, 0, .4);
-  
-  }
-  
-  .clock2{
-    text-align: center;
-    width: 40%;
-    justify-content: center;
-    display: flex;
-  }
-  
   
   /* ---------------------------------------------------------------------- */
   /* CARD BLOG */
