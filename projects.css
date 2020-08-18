@@ -1,102 +1,6 @@
   
   
-  html{
-    scroll-behavior: smooth;
-  }
   
-  
-  a{
-    text-decoration: none;
-    color: #ffffff;
-    transition: opacity .2s;
-  }
-  
-  a:hover{
-    opacity:.6;
-  }
-  
-  section{
-    height: 100vh;
-  }
-  
-  
-  
-  nav{
-    display: flex;
-    padding: 40px 56px;
-    background: transparent;
-    user-select: none;
-    align-items: center;
-    position: fixed;
-    width: 100%;
-    z-index: 100;
-    margin: 0;
-    padding: 0;
-    border: none;
-    box-sizing: border-box;
-    justify-content: center;
-    font-family: 'Open Sans', sans-serif;
-    transition: background .4s, padding .4s;
-  }
-  
-  nav span{
-    color: #07dffc;
-    font-weight: 700;
-    width: 30%;
-    padding: 16px;
-    font-size: 14px;
-  }
-  
-  nav ul{
-    list-style-type: none;
-    margin-left: auto;
-    display: flex;
-    justify-content: flex-end;
-    padding: 16px;
-    font-size: 14px;
-  }
-  
-  nav ul li:not(:first-child){
-    margin-left: 32px;
-  }
-  
-  nav._fixed{
-    background: #121212;
-    padding: 10px 10  px;
-  }
-  
-  /* --------------------------------------------------------- */
-  /* Clock */
-  
-  
-  
-  *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Montserrat',sans-serif;
-  
-  }
-  
-  #clock p{
-    width: 210px;
-    line-height: 30px;
-    text-align: center;
-    border-radius: 50px;
-    color: lightskyblue;
-    font-size: 28px;
-    box-shadow: inset 2px 3px 4px rgba(255, 255, 255, .1), 2px 3px 4px rgba(0, 0, 0, .4);
-    
-  }
-  
-  .clock2{
-    text-align: center;
-    width: 40%;
-    justify-content: center;
-    display: flex;
-  }
-
-
 
 
 
@@ -195,6 +99,28 @@ transform: translateX(0);
     overflow: hidden;
 }
 
+
+@media (max-width: 768px) {
+  .gallery{
+    height: 100vh;
+    width: 50vw;
+    text-align: center;
+    position: relative;
+    margin: 0px auto;
+    z-index: 2;
+    overflow: hidden;
+  }
+}
+
+
+@media (min-width: 1200px) {
+  .gallery{
+    height: 250px;
+  }
+}
+
+
+
 .gallery .galleryimage{
     height: 100%;
     width: 100%;
@@ -256,7 +182,7 @@ transform: translateX(0);
 
 
 .ProjectBio{
-    background: url('https://images.pexels.com/photos/994605/pexels-photo-994605.jpeg') no-repeat center center;
+    background: url(image/airplanepinksmoke.jpg) no-repeat center center;
     background-size: cover;
 
     height: 100vh;
@@ -272,35 +198,10 @@ transform: translateX(0);
   
 
 
-  
-  .ProjectBio::before{
-    display: block;
-    content: '';
-    
 
 
-    width: 100%;
-    height: 100%;
-  
-    position: absolute;
-    left: 0;
-    top: 0;
-  
-/*     opacity: .2;
-  
-    --filterColor: linear-gradient(-45deg, blue, orange );
-    --filterOpacity: 0.3;
-  
-   
-    opacity: var(--filterOpacity);
-  
-    background-size: 200% 200%;
-    background-image: var(--filterColor);
-   */
-    animation: filter normal 5s infinite ease-in-out;
-  
-    z-index: 0;
-  }
+
+
 /*   
   @keyframes filter{
     0% {background-position: 0% 50%;}
@@ -308,3 +209,37 @@ transform: translateX(0);
     100% {background-position: 0% 50%;}
   }
  */
+
+
+
+ .ProjectBio h1{
+
+  font-size: 2vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+
+}
+
+
+ @media (max-width: 768px) {
+  .ProjectBio h1{
+    font-size: 2vh;
+  }
+}
+
+
+@media (min-width: 1200px) {
+  .ProjectBio h1{
+    font-size: 2vw;
+    color: black;
+  }
+}
+
+
+
+
+
+ 

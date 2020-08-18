@@ -23,7 +23,18 @@
 }
   
 
+@media (max-width: 768px) {
+  .storiesmainpageclass h1{
+    font-size: 4vw;
+  }
+}
 
+
+@media (min-width: 1200px) {
+  .storiesmainpageclass h1{
+    font-size: 2.5vw;
+  }
+}
 
 
 

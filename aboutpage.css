@@ -61,6 +61,21 @@
     padding-bottom: 60px;
   }
   
+
+  @media (max-width: 768px) {
+    .About1Page h1{
+      padding-bottom: 0;
+    }
+  }
+  
+  
+  @media (min-width: 1200px) {
+    .About1Page h1{
+      padding-bottom: 120px;
+    }
+  }
+
+
   path{
     stroke:#fff;
     fill: #fff;
@@ -99,9 +114,8 @@
   .About1Page h3{
     margin: 0;
     text-transform: uppercase;
-    font-size: 20px;
+    font-size: 2vw;
     
-    width: 65%;
     user-select: none;
     z-index: 1;
     animation: fadein 1.5s ease-in-out;
@@ -120,7 +134,18 @@
   }
   
   
-
+  @media (max-width: 768px) {
+    .About1Page h3{
+      font-size: 3vw;
+    }
+  }
+  
+  
+  @media (min-width: 1200px) {
+    .About1Page h3{
+      font-size: 2vw;
+    }
+  }
 
 
 
@@ -216,6 +241,20 @@
 }
 
 
+@media (max-width: 768px) {
+  .Bio img{
+    height: 150px;
+  }
+}
+
+
+@media (min-width: 1200px) {
+  .Bio img{
+    height: 250px;
+  }
+}
+
+
 .Bio{
   height: 100vh;
   width: 100vw;
@@ -234,7 +273,18 @@
 
 
 
+@media (max-width: 768px) {
+  .Bio h1{
+    font-size: 4vw;
+  }
+}
 
+
+@media (min-width: 1200px) {
+  .Bio h1{
+    font-size: 2vw;
+  }
+}
   
   
   
